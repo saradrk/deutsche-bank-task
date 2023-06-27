@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.fdmgroup.dailyMarketAggregates","l":"Aggregator"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.fdmgroup.dailyMarketAggregates","l":"Trade"},{"p":"com.fdmgroup.dailyMarketAggregates","l":"TradeDay"}];updateSearchResults();
