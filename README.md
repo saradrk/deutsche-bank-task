@@ -48,7 +48,7 @@ Clone this repository and run:
 
 Output will be printed to your console in the following format:  
 ```
-####yyyy-mm-dd####
+***yyyy-mm-dd***
 
 --TICKER1--
 Open price:
