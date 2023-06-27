@@ -12,15 +12,13 @@ Clone this repository and find the following:
 ### dailyMarketAggregates package
 Implementation of the task:  
 
-``src/main/com/fdmgroup/dailyMarketAggregates/Aggregator.java``   
+``src/main/com/fdmgroup/dailyMarketAggregates/Aggregator.java`` 
+
+``src/main/com/fdmgroup/dailyMarketAggregates/Main.java``
 
 ``src/main/com/fdmgroup/dailyMarketAggregates/Trade.java``  
 
 ``src/main/com/fdmgroup/dailyMarketAggregates/TradeDay.java``  
-
-*Run the program:* 
-
-*``src/main/com/fdmgroup/dailyMarketAggregates/Main.java``*
 
 ### Data
 The exemplary historical market log:  
@@ -42,3 +40,25 @@ Run:
 ``src/test/java/com/fdmgroup/dailyMarketAggregates/AggregatorTest.java``  
 
 ``src/test/java/com/fdmgroup/dailyMarketAggregates/TradeDayTest.java``  
+
+## Running the program
+Clone this repository and run:  
+
+``src/main/com/fdmgroup/dailyMarketAggregates/Main.java``  
+
+Output will be printed to your console in the following format:  
+```
+####yyyy-mm-dd####
+
+--TICKER1--
+Open price:
+Close price:
+Highest price:
+Lowest price:
+Daily traded volume:
+
+--TICKER2--
+.
+.
+.
+```
