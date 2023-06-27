@@ -18,7 +18,7 @@ Implementation of the task:
 
 ``src/main/com/fdmgroup/dailyMarketAggregates/TradeDay.java``  
 
-*For running the program:* 
+*Run the program:* 
 
 *``src/main/com/fdmgroup/dailyMarketAggregates/Main.java``*
 
