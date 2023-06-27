@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
@@ -59,7 +60,7 @@ public class Main {
 	}
 
 	public static void printTradeDayAggregates(Aggregator aggregator, TradeDay tradeDay) {
-		System.out.println("####" + tradeDay.getDate() + "####\n");
+		System.out.println("***" + tradeDay.getDate() + "***\n");
 		for (Map.Entry<String, List<Trade>> tickerEntry : tradeDay.getTradesPerTicker().entrySet()) {
 			System.out.println("--" + tickerEntry.getKey() + "--");
 			double openPrice = aggregator.calculateOpenPriceOfTicker(tickerEntry.getValue());
@@ -84,8 +85,11 @@ public class Main {
 	}
 
 	public static void printAggregateNameAndResult(String nameOfAggregate, double result) {
+		// Format the double values so they only have two digits after the comma
+		NumberFormat numFormat = NumberFormat.getInstance();
+		numFormat.setMaximumFractionDigits(2);
 		if (result > 0.0) {
-			System.out.println(nameOfAggregate + ": " + result);
+			System.out.println(nameOfAggregate + ": " + numFormat.format(result));
 		} else {
 			System.out.println(nameOfAggregate + ": " + "N/A");
 		}
