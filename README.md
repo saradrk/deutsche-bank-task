@@ -3,7 +3,7 @@ Deutsche Bank Task is a project with the purpose to calculate and display daily 
 
 ## Technologies
 The project is created with:  
-- Java 1.8
+- JavaSE 1.8
 - Eclipse IDE Version: 2023-03
 
 ## Repository Overview
